@@ -1,5 +1,5 @@
 FROM docker.io/alpine AS build
-RUN apk add --no-cache build-base
+RUN apk add --no-cache build-base linux-headers
 WORKDIR /usr/local/src/byedpi
 COPY byedpi .
 RUN make
